@@ -16,9 +16,9 @@ function MoodPickerDemo(): JSX.Element {
     queueRerenderWithNewMoodValue("sad");
   };
 
-  const handleMoodChangeToTired = () => queueRerenderWithNewMoodValue("tired")
+  const handleMoodChangeToTired = () => queueRerenderWithNewMoodValue("tired");
 
-  const handleMoodChangeToReady = () => queueRerenderWithNewMoodValue("ready")
+  const handleMoodChangeToReady = () => queueRerenderWithNewMoodValue("ready");
 
   return (
     <>
@@ -28,10 +28,11 @@ function MoodPickerDemo(): JSX.Element {
       <button onClick={handleMoodChangeToConfused}>🤔</button> <br />
       <button onClick={handleMoodChangeToSad}>😢</button> <br />
       <br />
-      <button onClick={() => queueRerenderWithNewMoodValue("laughing")}>🤣</button>
+      <button onClick={() => queueRerenderWithNewMoodValue("laughing")}>
+        🤣
+      </button>
       <button onClick={handleMoodChangeToTired}>😴</button>
       <button onClick={handleMoodChangeToReady}>😎</button>
-
     </>
   );
 }
